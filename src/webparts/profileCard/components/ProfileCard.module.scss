@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+.CardBox{
+	float: left ;
+  animation: animationFrames ease 2s;
+  animation-iteration-count: 2;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  width: 100%;
+  text-align: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 10px;
+}
+.card {
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 12px 13px rgba(0,0,0,0.16), 0 12px 13px rgba(0,0,0,0.16);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background:#FDFEFF;
+  padding-top:1rem ;
+  padding-bottom:1rem ;
+}
+.card .MuiAccordionDetails-root{
+  z-index:9999;
+}
+.profile{
+  border-radius:100%;
+  margin-top:60px;
+  width:132px;
+  height:128px;
+}
+
+.title{
+  color:#2D354A;
+  font-family: roboto;
+}
+.followers{
+  color:#666B7D;
+  font-family:10px;
+  margin-top:10px;
+  font-family: roboto;
+}
+.jtitle{
+  color:#7C8097;
+  font-size:12px;
+  font-family:roboto;
+}
+
+.desc{
+  font-size:12px;
+  margin-left: 65px;
+  margin-right: 65px;
+  color:#B7B8C0;
+  text-align:center;
+  margin-top:16px;
+}
+
+.content{
+  display:center;
+}
+
+*{
+  font-family:Roboto;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.btn{
+  border:none;
+  height:40px;
+  color:#ffffff;
+  width:100%;
+  font-size:16px;
+  border-radius:30px;
+  box-shadow: 0 13px 26px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+  background: darkblue;
+  display: block;
+}
+// .btn:hover{
+//   border:solid 1px #DA59B1;
+//   height:40px;
+//   font-family: Roboto;
+//   color: #DA59B1;
+//   background:#ffffff;
+//   width:100%;
+//   border-color: linear-gradient(to top right, #8162CE, #F54BA5);;
+//   border-radius:30px;
+//   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+// }
+
+.circule{
+  border-radius:50%;
+  border:none;
+  height:60px;
+  width:60px;
+  color:#ffffff;
+  box-shadow: 0 13px 26px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+  
+  }
+
+.img{
+  width:280px;
+  object-position:center ;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+
+
+
+
+.center{
+      display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+
+@keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    transform:  translate(30px,0px)  ;
+  }
+  80% {
+    transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -webkit-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+
+
+    
+@media (max-height: 500px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+  }
+  .card{
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+  }
+  .card{
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+  }
+  .card{
+    margin: 1rem;
+  }
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0px;
+  }
+  .card{
+    margin: 1rem;
+  }
+}
